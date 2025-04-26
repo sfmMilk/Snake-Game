@@ -2,42 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameObj{
-    private class Vector2{
-        public int x;
-        public int y;
-
-        public Vector2(){
-            x = 0;
-            y = 0;
-        }
-
-        public Vector2(int _x, int _y){
-            x = _x;
-            y = _y;
-        }
-
-        public Vector2 add(Vector2 other){
-            Vector2 sum = new Vector2();
-            sum.x = other.x + x;
-            sum.y = other.y + y;
-
-            return sum;
-        }
-
-        public boolean intersects(Vector2 other){
-            return (x == other.x && y == other.y);
-        }
-
-        @Override
-        public String toString(){
-            return "(" + x + ", " + y + ")";
-        }
-    }
-
     public Vector2 Position;
     public Vector2 Direction;
 
-    private Color Color;
+    public Color Color;
 
     public GameObj(){
         Position = new Vector2();
