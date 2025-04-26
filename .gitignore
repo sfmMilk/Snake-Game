@@ -1,6 +1,20 @@
 # Gradle files
 .gradle/
 build/
+bin/
+
+# Compiled class files
+*.class
 
 # VSCode settings
 .vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor backups
+*~
